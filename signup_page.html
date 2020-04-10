@@ -1,0 +1,94 @@
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        Vidmob - Get Started
+    </title>
+    <link rel="stylesheet" href="signup_page.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script src="signup_page.js"></script>
+</head>
+<body>
+    <div id="corner-logo">
+        <img src="">
+    </div>
+    <div id="login-prompt">
+        <div id="login-prompt-message">
+            Already have an account?
+        </div>
+        <button id="login-prompt-button">
+            LOG IN
+        </button>
+    </div>
+    <div id="signup-content">
+        <div id="signup-header" class="header">
+            Get started on VidMob
+        </div>
+        <div id="signup-message" class="message">
+            Enter your work email.
+        </div>
+        <hr id="signup-divider" class="divider"></hr>
+        <input id="signup-input" type="text" value="name@company.com">
+        <button id="signup-submit" class="submit-button" type="button">
+            NEXT
+        </button>
+    </div>
+    <div id="error-overlay-content">
+        <button id="overlay-close-button" type="button">
+            CLOSE <img src="">
+        </button>
+        <div id="overlay-icon">
+
+        </div>
+        <div id="overlay-header" class="header">
+            That looks familiar
+        </div>
+        <div id="overlay-message" class="message">
+            That email looks like it's part of an existing company. Check your email for an invite to your company.
+        </div>
+    </div>
+    <div id="newcomp-profile-content">
+        <div id="newcomp-profile-header" class="header">
+            Get started on VidMob
+        </div>
+        <div id="newcomp-profile-message" class="message">
+            Your email wasn't associated with an existing company. Fill out the information below to create a new one.
+        </div>
+        <hr id="newcomp-profile-divider" class="divider"></hr>
+        <!-- might replace with form element if I can find a good framework bc otw hard to make responsive -->
+        <input id="newcomp-input" type="text" value="First Name">
+        <input id="newcomp-input" type="text" value="Last Name">
+        <input id="newcomp-input" type="text" value="Display Name (optional)">
+        <input id="newcomp-input" type="text" value="Password">
+        <button id="newcomp-submit" class="submit-button" type="button">
+            SIGN UP
+        </button>
+        <div id="tc-agreement">
+            By selecting Sign Up, you agree to our <span id="tc-link">Terms & Conditions</span>
+        </div>
+    </div>
+    <div id="comp-emails-content">
+        <div id="comp-emails-header" class="header">
+            Company sign-up mode
+        </div>
+        <div id="comp-emails-message" class="message">
+            Anyone with a specified email domain can join your team. Otherwise, an owner or co-owner will have to invite all team members.
+        </div>
+        <hr id="comp-emails-divider" class="divider">
+        <div id="comp-emails-permission">
+            <div id="comp-emails-any">
+
+            </div>
+            <div id="comp-emails-invite">
+
+            </div>
+        </div>
+        <button id="comp-emails-submit" class="submit-button" type="button">
+            DONE
+        </button>
+    </div>
+</body>
