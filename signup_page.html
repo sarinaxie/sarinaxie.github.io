@@ -14,7 +14,7 @@
 </head>
 <body>
     <div id="corner-logo">
-        <img src="">
+        <img class="logo" src="logo.png">
     </div>
     <div id="login-prompt">
         <div id="login-prompt-message">
@@ -24,6 +24,7 @@
             LOG IN
         </button>
     </div>
+
     <div id="signup-content">
         <div id="signup-header" class="header">
             Get started on VidMob
@@ -32,17 +33,23 @@
             Enter your work email.
         </div>
         <hr id="signup-divider" class="divider"></hr>
-        <input id="signup-input" type="text" value="name@company.com">
-        <button id="signup-submit" class="submit-button" type="button">
+        <input id="signup-email-input" type="text" placeholder="name@company.com">
+        <button id="next-submit-button" class="submit-button" type="button">
             NEXT
         </button>
     </div>
+
+    <div id="chat-icon">
+        <img class="logo" src="logo.png">
+    </div>
+
+    <div id="overlay"></div>
     <div id="error-overlay-content">
         <button id="overlay-close-button" type="button">
-            CLOSE <img src="">
+            CLOSE <img class="x-close" src="logo.png">
         </button>
         <div id="overlay-icon">
-
+            <img src="logo.png">
         </div>
         <div id="overlay-header" class="header">
             That looks familiar
@@ -51,6 +58,7 @@
             That email looks like it's part of an existing company. Check your email for an invite to your company.
         </div>
     </div>
+
     <div id="newcomp-profile-content">
         <div id="newcomp-profile-header" class="header">
             Get started on VidMob
@@ -60,17 +68,21 @@
         </div>
         <hr id="newcomp-profile-divider" class="divider"></hr>
         <!-- might replace with form element if I can find a good framework bc otw hard to make responsive -->
-        <input id="newcomp-input" type="text" value="First Name">
-        <input id="newcomp-input" type="text" value="Last Name">
-        <input id="newcomp-input" type="text" value="Display Name (optional)">
-        <input id="newcomp-input" type="text" value="Password">
-        <button id="newcomp-submit" class="submit-button" type="button">
-            SIGN UP
-        </button>
+        <form>
+            <input id="newcomp-fname-input" type="text" placeholder="First Name">
+            <input id="newcomp-lname-input" type="text" placeholder="Last Name">
+            <input id="newcomp-username-input" type="text" placeholder="Display Name                                               (optional)">
+            <input id="newcomp-pword-input" type="text" placeholder="Password">            
+            <input id="newcomp-company-input" type="text" placeholder="Company Name">
+            <button id="newcomp-submit" class="submit-button" type="button">
+                SIGN UP
+            </button>
+        </form>
         <div id="tc-agreement">
             By selecting Sign Up, you agree to our <span id="tc-link">Terms & Conditions</span>
         </div>
     </div>
+
     <div id="comp-emails-content">
         <div id="comp-emails-header" class="header">
             Company sign-up mode

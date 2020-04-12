@@ -1,36 +1,151 @@
-#corner-logo {
-
+body {
+    background-color: darkcyan;
 }
+.no-outline {
+    outline: none;
+}
+#corner-logo {
+    display: inline-block;
+}
+.logo {    
+    width: 30px;
+}
+#login-prompt {
+    display: inline-block;
+    float: right;
+}
+#login-prompt-message {
+    display: inline-block;
+    color: white;
+}
+#login-prompt-button {
+    display: inline-block;
+    background-color: darkcyan;
+    color: white;
+    border: .5px solid white;
+    border-radius: 30px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 6rem;
+}
+#chat-icon {
+    position:fixed;
+    bottom: 0;
+    right: 0;
+}
+
 
 #signup-content {
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(-2px);
+    background-color: white;
+    padding: 2rem 1rem;
+    width: 20rem;
 }
 .header {
-
+    font-size: 1.2em;
 }
 .message {
-
+    color:gray;
 }
 .divider {
-
+    border-top: .5px solid gray;
 }
-#signup-input {
-
+#signup-email-input {
+    margin-top: 1rem;
+    padding: .5rem;
+    width: 100%;
+    border: .5px solid gray;
 }
 .submit-button {
-
+    float: right;
+    background-color: darkcyan;
+    color: white;
+    border-color: transparent;
+    border-radius: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 8rem;
+    margin-top: .5rem;
 }
 
+#overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
 #error-overlay-content {
     display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(-2px);
+    background-color: white;
+    padding: 2rem 1rem;
+    width: 16rem;
+    text-align: center;
 }
 #overlay-close-button {
-
+    position: absolute;
+    top:-21;
+    right:-7;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+}
+.x-close {
+    width: 10px;    
 }
 #overlay-icon {
-
 }
 
 #newcomp-profile-content {
+    /* display: none; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(-2px);
+    background-color: white;
+    padding: 2rem 1rem;
+    width: 20rem;
+}
+#newcomp-fname-input {
+    display: inline-block;
+    width: 49%;
+}
+#newcomp-lname-input {
+    display: inline-block;
+    width: 49%;
+    float: right;
+}
+#newcomp-username-input {
+    width: 100%;
+}
+#placeholder-right {
+}
+#newcomp-pword-input {
+    width: 100%;
+}
+#newcomp-company-input {
+    width: 100%;
+}
+#tc-agreement {
+    position: absolute;
+    bottom: -20;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: .8rem;
+}
+
+#comp-emails-content {
     display: none;
 }
