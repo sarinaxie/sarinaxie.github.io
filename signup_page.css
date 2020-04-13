@@ -1,5 +1,6 @@
 body {
     background-color: darkcyan;
+    font-family: 'TT Commons Medium',Helvetica,Arial,Lucida,sans-serif;
 }
 .no-outline {
     outline: none;
@@ -45,13 +46,18 @@ body {
     width: 20rem;
 }
 .header {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 .message {
     color:gray;
+    font-size: .8rem;
 }
 .divider {
-    border-top: .5px solid gray;
+    height: 1px;
+    border: 0;
+    border-top: .5px solid lightgray;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
 }
 #signup-email-input {
     margin-top: 1rem;
@@ -68,7 +74,7 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: 8rem;
-    margin-top: .5rem;
+    margin-top: 1.2rem;
 }
 
 #overlay {
@@ -118,27 +124,46 @@ body {
     width: 20rem;
 }
 #newcomp-fname-input {
+    border: .5px solid lightgray;
+    border-radius: 2px;
     display: inline-block;
     width: 49%;
+    padding: .7rem;
 }
 #newcomp-lname-input {
     display: inline-block;
+    border: .5px solid lightgray;
+    border-radius: 2px;
     width: 49%;
+    padding: .7rem;
     float: right;
 }
 #newcomp-username-input {
+    border: .5px solid lightgray;
+    border-radius: 2px;
     width: 100%;
+    padding: .7rem;
+    margin-top: .45rem;
 }
 #newcomp-pword-input {
+    border: .5px solid lightgray;
+    border-radius: 2px;
     width: 100%;
+    padding: .7rem;
+    margin-top: .45rem;
 }
 #newcomp-company-input {
+    border: .5px solid lightgray;
+    border-radius: 2px;
     width: 100%;
+    padding: .7rem;
+    margin-top: .45rem;
 }
 #tc-agreement {
     position: absolute;
-    bottom: -20;
-    background-color: transparent;
+    left: 10;
+    bottom: -40;
+    background-color: red;
     border-color: transparent;
     color: white;
     font-size: .8rem;
